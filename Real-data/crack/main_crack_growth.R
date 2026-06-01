@@ -217,7 +217,7 @@ for (i in 1:nrow(scenarios)) {
   # B. Save diagnostic plots
   # ---------------------------------------------------------------------------
   
-  save_diagnostics(res$samples, model_name, output_dir = current_case_folder)
+  # save_diagnostics(res$samples, model_name, output_dir = current_case_folder)
   
   # ---------------------------------------------------------------------------
   # C. Store model summary
