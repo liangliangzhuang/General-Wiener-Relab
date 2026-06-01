@@ -91,5 +91,4 @@ The following table summarizes the data files, code files, expected outputs, and
 | Table 4, Table 5, Figure 7 | `PMB_data.csv` | `main_PMB_linear.R` | `PMB_GoF_QQ.pdf`<br>`PMB_Path_Fitting.pdf`<br>`Final_PMB_Model_all.RData` | 2 minutes |
 | Figure 9 | Embedded in script | `eda_crack_growth.R` | `1-crack.pdf`<br>`2-ratio.pdf` | 10 seconds |
 | Table 6, Figure 10 | `crack_growth_data.csv` | `main_crack_growth.R` | `Goodness_of_Fit_QQ.pdf`<br>`Path_Fitting_Best_Model.pdf` | 30 seconds |
-|
 
