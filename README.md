@@ -1,11 +1,10 @@
-
 # Code and Data Description
 
 This repository contains the real-data analysis code for the manuscript submitted to IISE Transactions:
 
 **Modeling Multivariate Degradation with Time-Varying Mean–Variance Dynamics for Reliability Assessment: A Hierarchical Bayesian Approach**
 
-The `Real-data` folder includes two real case studies used in the manuscript: fatigue crack growth data and permanent magnet brake data. Each case study contains the raw data, exploratory data analysis scripts, main analysis scripts, and generated results.
+The `Real-data` folder includes two real case studies used in the manuscript: permanent magnet brake data and fatigue crack growth data. Each case study contains the raw data, exploratory data analysis scripts, main analysis scripts, and generated results.
 
 ---
 
@@ -13,41 +12,23 @@ The `Real-data` folder includes two real case studies used in the manuscript: fa
 
 ```text
 Real-data/
-├── crack/
-│   ├── eda_crack_growth.R
-│   ├── main_crack_growth.R
-│   ├── crack_growth_data.csv
+├── PMB/
+│   ├── eda_PMB.R
+│   ├── main_PMB_linear.R
+│   ├── utility_PMB.R
+│   ├── PMB_data.csv
 │   └── result/
 │
-└── PMB/
-    ├── eda_PMB.R
-    ├── main_PMB_linear.R
-    ├── utility_PMB.R
-    ├── PMB_data.csv
+└── crack/
+    ├── eda_crack_growth.R
+    ├── main_crack_growth.R
+    ├── crack_growth_data.csv
     └── result/
 ```
 
 ---
 
-# Case Study 1: Fatigue Crack Growth Data
-
-Folder: `Real-data/crack/`
-
-- `eda_crack_growth.R`  
-  Performs exploratory data analysis for the fatigue crack growth data.
-
-- `main_crack_growth.R`  
-  Runs the main model-fitting procedures and generates the results reported in the manuscript.
-
-- `crack_growth_data.csv`  
-  Raw fatigue crack growth data.
-
-- `result/`  
-  Stores generated numerical results, diagnostic outputs, and figures.
-
----
-
-# Case Study 2: Permanent Magnet Brake Data
+# Case Study 1: Permanent Magnet Brake Data
 
 Folder: `Real-data/PMB/`
 
@@ -59,7 +40,7 @@ Folder: `Real-data/PMB/`
 
 - `utility_PMB.R`  
   Contains utility functions for:
-  
+
   - data loading,
   - model specification,
   - Bayesian inference,
@@ -69,6 +50,24 @@ Folder: `Real-data/PMB/`
 
 - `PMB_data.csv`  
   Raw permanent magnet brake degradation data.
+
+- `result/`  
+  Stores generated numerical results, diagnostic outputs, and figures.
+
+---
+
+# Case Study 2: Fatigue Crack Growth Data
+
+Folder: `Real-data/crack/`
+
+- `eda_crack_growth.R`  
+  Performs exploratory data analysis for the fatigue crack growth data.
+
+- `main_crack_growth.R`  
+  Runs the main model-fitting procedures and generates the results reported in the manuscript.
+
+- `crack_growth_data.csv`  
+  Raw fatigue crack growth data.
 
 - `result/`  
   Stores generated numerical results, diagnostic outputs, and figures.
@@ -91,4 +90,3 @@ The following table summarizes the data files, code files, expected outputs, and
 | Table 4, Table 5, Figure 7 | `PMB_data.csv` | `main_PMB_linear.R` | `PMB_GoF_QQ.pdf`<br>`PMB_Path_Fitting.pdf`<br>`Final_PMB_Model_all.RData` | 2 minutes |
 | Figure 9 | Embedded in script | `eda_crack_growth.R` | `1-crack.pdf`<br>`2-ratio.pdf` | 10 seconds |
 | Table 6, Figure 10 | `crack_growth_data.csv` | `main_crack_growth.R` | `Goodness_of_Fit_QQ.pdf`<br>`Path_Fitting_Best_Model.pdf` | 30 seconds |
-
