@@ -81,3 +81,15 @@ The scripts are organized so that exploratory analysis and main model-fitting pr
 
 All generated figures, tables, posterior summaries, and diagnostic outputs are saved in the corresponding `result/` folders.
 
+## Reproducibility Workflow
+
+The following table summarizes the data files, code files, expected outputs, and approximate runtime for reproducing the main empirical results.
+
+| Which results to reproduce | Data File | Code File | Expected output | Run time at the above-specified computer conditions |
+|---|---|---|---|---|
+| Table 1 | `PMB_data.csv` | `eda_PMB.R` | `1-pmb_path.pdf`<br>`2-pmb_ratio.pdf`<br>`3-pmb_corr.pdf`<br>`4-pmb_hetero.pdf` | 15 seconds |
+| Table 4, Table 5, Figure 7 | `PMB_data.csv` | `main_PMB_linear.R` | `PMB_GoF_QQ.pdf`<br>`PMB_Path_Fitting.pdf`<br>`Final_PMB_Model_all.RData` | 2 minutes |
+| Figure 9 | Embedded in script | `eda_crack_growth.R` | `1-crack.pdf`<br>`2-ratio.pdf` | 10 seconds |
+| Table 6, Figure 10 | `crack_growth_data.csv` | `main_crack_growth.R` | `Goodness_of_Fit_QQ.pdf`<br>`Path_Fitting_Best_Model.pdf` | 30 seconds |
+|
+
